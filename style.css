@@ -1,0 +1,596 @@
+
+/* COMPLETE WEBSITE DESIGN */
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #F5F0E5;
+    color: #26352D;
+    line-height: 1.7;
+}
+
+/* MAIN HEADING */
+
+h1 {
+    color: #123D2B;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+/* SECONDARY HEADINGS */
+
+h2 {
+    color: #123D2B;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+/* IMAGE DESIGN */
+
+img {
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(18, 61, 43, 0.18);
+}
+
+/* BUTTON DESIGN */
+
+a {
+    display: table;
+    margin: 20px auto;
+    background-color: #123D2B;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* BUTTON HOVER EFFECT */
+
+a:hover {
+    background-color: #C5A253;
+    color: #123D2B;
+}
+
+/* PARAGRAPH DESIGN */
+
+p {
+    text-align: center;
+    font-size: 17px;
+}
+
+/* COURSE HEADINGS */
+
+h3 {
+    color: #123D2B;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+/* COURSE LIST DESIGN */
+
+ul {
+    max-width: 550px;
+    margin: 15px auto 30px;
+    padding: 20px 20px 20px 45px;
+    background-color: #FFFFFF;
+    border-left: 5px solid #C5A253;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+li {
+    padding: 5px;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #123D2B;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* NAVIGATION LINKS */
+
+nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 14px;
+    background-color: transparent;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* NAVIGATION HOVER */
+
+nav a:hover {
+    background-color: #C5A253;
+    color: #123D2B;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+    margin-top: 25px;
+    background-color: #E9E1CF;
+    border-radius: 18px;
+}
+
+/* HERO HEADING */
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+/* HERO DESCRIPTION */
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 15px auto 25px;
+}
+
+/* HERO IMAGE */
+
+.hero img {
+    margin-top: 30px;
+}
+
+/* COURSES SECTION */
+
+.courses {
+    padding: 40px 15px;
+    margin-top: 35px;
+}
+
+/* COURSE CONTAINER */
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* INDIVIDUAL COURSE CARD */
+
+.course-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 5px 18px rgba(18, 61, 43, 0.10);
+    border-top: 5px solid #C5A253;
+}
+
+/* COURSE CARD HEADING */
+
+.course-card h3 {
+    color: #123D2B;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+/* COURSE CARD PARAGRAPH */
+
+.course-card p {
+    color: #555555;
+    font-size: 15px;
+}
+
+/* COURSE LIST */
+
+.course-card ul {
+    box-shadow: none;
+    margin: 15px 0;
+    padding: 10px 10px 10px 30px;
+    border-left: 3px solid #C5A253;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border-left: 6px solid #C5A253;
+    box-shadow: 0 5px 18px rgba(18, 61, 43, 0.10);
+}
+
+/* ABOUT HEADING */
+
+.about h2 {
+    margin-top: 0;
+    color: #123D2B;
+}
+
+/* ABOUT PARAGRAPHS */
+
+.about p {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    background-color: #123D2B;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+/* CONTACT HEADING */
+
+.contact h2,
+.contact h3 {
+    color: #C5A253;
+}
+
+/* CONTACT TEXT */
+
+.contact p {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #218C52;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #176B3D;
+    color: #FFFFFF;
+}
+
+/* WEBSITE FOOTER */
+
+.footer {
+    background-color: #123D2B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.footer h3 {
+    color: #C5A253;
+    font-size: 24px;
+}
+
+.footer p {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    .hero {
+        padding: 25px 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .course-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about,
+    .contact {
+        padding: 20px 12px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+.admission {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #E9E1CF;
+    border-radius: 18px;
+    border-top: 5px solid #C5A253;
+}
+
+.admission h2 {
+    color: #123D2B;
+    margin-top: 0;
+}
+
+.admission p {
+    color: #555555;
+    font-size: 17px;
+}
+
+.admission h3 {
+    color: #123D2B;
+    margin-top: 30px;
+}
+
+.admission ol {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 20px 20px 20px 45px;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.admission li {
+    padding: 8px;
+    color: #26352D;
+}
+
+.admission a {
+    display: inline-block;
+    background-color: #123D2B;
+    color: #FFFFFF;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admission a:hover {
+    background-color: #C5A253;
+    color: #123D2B;
+}
+
+.admission-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(18, 61, 43, 0.10);
+}
+
+.admission-form h3,
+.admission-form p {
+    text-align: center;
+}
+
+.admission-form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    color: #123D2B;
+    font-weight: bold;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D5D5D5;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.admission-form textarea {
+    resize: vertical;
+}
+
+.admission-form button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    background-color: #123D2B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admission-form button:hover {
+    background-color: #C5A253;
+    color: #123D2B;
+}
+
+.submission-result {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 2px solid #C5A253;
+    border-radius: 15px;
+    color: #26352D;
+    font-size: 16px;
+    line-height: 2;
+    white-space: pre-line;
+    box-shadow: 0 5px 18px rgba(18, 61, 43, 0.10);
+}
+
+.submission-result::first-line {
+    color: #123D2B;
+    font-weight: bold;
+}
+
+/* ACADEMY LOGO */
+
+nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+nav .brand img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .nav-links {
+        justify-content: center;
+    }
+}
+.email-btn {
+    display: inline-block;
+    background-color: #C5A253;
+    color: #123D2B;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.email-btn:hover {
+    background-color: #D8B96F;
+    transform: translateY(-2px);
+}
+
+/* ADMISSION ENQUIRY ACTION BUTTONS */
+
+#submissionResult {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+#submissionResult h3 {
+    margin-bottom: 12px;
+    color: #123D2B;
+}
+
+#submissionResult p {
+    margin-bottom: 15px;
+}
+
+#submissionResult a.email-btn,
+#submissionResult a.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 190px;
+    padding: 13px 22px;
+    margin: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+#submissionResult a.email-btn {
+    background: #C5A253;
+    color: #123D2B;
+}
+
+#submissionResult a.whatsapp-btn {
+    background: #123D2B;
+    color: #FFFFFF;
+}
+
+#submissionResult a.email-btn:hover,
+#submissionResult a.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 500px) {
+    #submissionResult a.email-btn,
+    #submissionResult a.whatsapp-btn {
+        display: flex;
+        width: 100%;
+        max-width: 260px;
+        margin: 10px auto;
+    }
+}
