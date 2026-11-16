@@ -14,22 +14,32 @@
 
 <body>
 
-<nav>
+
+<nav class="main-nav">
     <a href="#home" class="brand">
         <img src="./logo b.png" alt="Al-Ilm Academy Logo">
         <span>Al-Ilm Academy</span>
     </a>
 
-    <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#admission">Admission</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
+        ☰
+    </button>
+
+    <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#programs">Our Programs</a>
+    <a href="#about">About</a>
+    <a href="#admission">Admission</a>
+    <a href="#exam-registration">Examination</a>
+    <a href="#contact">Contact</a>
+</div>
 </nav>
 
-  
+
+
 <section class="hero" id="home">
 
     <h1>Al-Ilm Academy</h1>
@@ -47,7 +57,7 @@
 </section>
 
 
-  
+
 <section class="courses" id="courses">
 
     <h2>Our Courses</h2>
@@ -76,6 +86,117 @@
                 <li>Computer Education</li>
             </ul>
         </div>
+
+    </div>
+
+</section>
+
+<!-- OUR PROGRAMS SECTION -->
+
+<section class="our-programs" id="programs">
+
+    <div class="programs-header">
+        <h2>Our Programs</h2>
+
+        <h3>Learning for Knowledge, Growth & Character</h3>
+
+        <p>
+            Explore our educational programs designed to develop academic
+            excellence, Islamic understanding and essential life skills.
+        </p>
+    </div>
+
+    <div class="programs-container">
+
+        <!-- PROGRAM 01 -->
+
+        <article class="program-card">
+
+            <div class="program-image">
+                <img
+                    src="./images/modern-school-education.png"
+                    alt="Teacher teaching students in a modern classroom"
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="program-content">
+                <h3>Modern School Education</h3>
+
+                <p>
+                    Providing quality education in English, Mathematics,
+                    Science and other academic subjects to build strong
+                    foundations and support students' academic growth.
+                </p>
+
+                <a href="#contact" class="program-btn">
+                    Learn More →
+                </a>
+            </div>
+
+        </article>
+
+        <!-- PROGRAM 02 -->
+
+        <article class="program-card">
+
+            <div class="program-image">
+                <img
+                    src="./images/islamic-arabic-education.png"
+                    alt="Open Quran on a wooden rehal with Arabic and Urdu learning books"
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="program-content">
+                <h3>Islamic & Arabic Education</h3>
+
+                <p>
+                    Helping students learn the Qur'an, Urdu language,
+                    Deeniyat, Tajweed and essential Islamic teachings
+                    while developing strong moral values and good character.
+                </p>
+
+                <a href="#contact" class="program-btn">
+                    Learn More →
+                </a>
+            </div>
+
+        </article>
+
+        <!-- PROGRAM 03 -->
+
+        <article class="program-card">
+
+            <div class="program-image">
+                <img
+                    src="./images/skills-personality-development.png"
+                    alt="Student giving a classroom presentation while classmates listen"
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="program-content">
+                <h3>Skills & Personality Development</h3>
+
+                <p>
+                    Developing communication, English speaking, confidence,
+                    creative thinking and essential life skills to prepare
+                    students for a brighter future.
+                </p>
+
+                <a href="#contact" class="program-btn">
+                    Learn More →
+                </a>
+            </div>
+
+        </article>
 
     </div>
 
@@ -116,9 +237,9 @@
         <li>Complete the admission process.</li>
     </ol>
 
-    <a href="#contact">Enquire for Admission</a>
+   <a href="#admissionFormSection">Enquire for Admission</a>
 
-<div class="admission-form">
+<div class="admission-form" id="admissionFormSection">
 
     <h3>Admission Inquiry Form</h3>
 
@@ -135,14 +256,24 @@
     required
 >
 
-        <label for="parent-name">Parent / Guardian Name</label>
-        <input
-            type="text"
-            id="parent-name"
-            name="parent-name"
-            placeholder="Enter parent or guardian name"
-            required
-        >
+<label for="parent-name">Parent / Guardian Name</label>
+<input
+    type="text"
+    id="parent-name"
+    name="parent-name"
+    placeholder="Enter parent or guardian name"
+    required
+>
+        <label for="student-age">Student's Age (Years)</label>
+<input
+    type="number"
+    id="student-age"
+    name="student-age"
+    placeholder="Enter student's age"
+    min="3"
+    max="70"
+    required
+>
 
         <label for="phone">Contact Number</label>
         <input
@@ -155,27 +286,32 @@
 
         <label for="course">Interested Course</label>
         <select id="course" name="course" required>
-            <option value="">Select a course</option>
+            <option value="" disabled selected>Select course</option>
             <option value="Islamic Education">Islamic Education</option>
             <option value="School Coaching">School Coaching</option>
             <option value="Both Courses">Both Courses (Islamic + School Coaching)</option>
         </select>
 
-        <label for="class">Student's Class</label>
-        <select id="class" name="class">
-            <option value="">Select class</option>
-            <option value="Class 1">Class 1</option>
-            <option value="Class 2">Class 2</option>
-            <option value="Class 3">Class 3</option>
-            <option value="Class 4">Class 4</option>
-            <option value="Class 5">Class 5</option>
-            <option value="Class 6">Class 6</option>
-            <option value="Class 7">Class 7</option>
-            <option value="Class 8">Class 8</option>
-            <option value="Class 9">Class 9</option>
-            <option value="Class 10">Class 10</option>
-            <option value="Not Applicable">Not Applicable</option>
-        </select>
+        <div id="classFieldGroup" hidden>
+
+    <label for="class">Student's Class</label>
+
+    <select id="class" name="class">
+        <option value="" disabled selected>Select class</option>
+        <option value="Independent Learner">Independent Learner</option>
+        <option value="Class 1">Class 1</option>
+        <option value="Class 2">Class 2</option>
+        <option value="Class 3">Class 3</option>
+        <option value="Class 4">Class 4</option>
+        <option value="Class 5">Class 5</option>
+        <option value="Class 6">Class 6</option>
+        <option value="Class 7">Class 7</option>
+        <option value="Class 8">Class 8</option>
+        <option value="Class 9">Class 9</option>
+        <option value="Class 10">Class 10</option>
+    </select>
+
+</div>
 
         <label for="message">Your Message</label>
         <textarea
@@ -195,27 +331,50 @@
 
 </section>
 
+<!-- EXAMINATION REGISTRATION SECTION -->
+
+<section class="exam-registration" id="exam-registration">
+
+    <h2>Examination Registration</h2>
+
+    <p>
+        Complete the form below to register for the Al-Ilm Academy examination.
+    </p>
+
+   <div class="exam-form">
+    <a
+        href="https://script.google.com/macros/s/AKfycbxy7cXH6IMPrATmM7qEzdLJ-iq9IzYQpVOkBs_WQFw/dev?page=registration"
+        target="_blank"
+        rel="noopener noreferrer">
+        Open Examination Registration Form
+    </a>
+</div>
+
+</section>
+
 <section class="contact" id="contact">
 
     <h2>Contact Us</h2>
 
     <p>
-        For admission information and course details,
-        feel free to contact Al-Ilm Academy.
-    </p>
-
+    For more details and information, feel free to contact
+    Al-Ilm Academy through WhatsApp or Email.
+</p>
     <h3>Al-Ilm Academy</h3>
 
     <p>We are here to guide you towards better learning.</p>
 
 <a class="whatsapp-btn"
-   href="https://wa.me/91XXXXXXXXXX"
-   target="_blank">
-   WhatsApp for Admission
+   href="https://wa.me/91XXXXXXXXXX?text=Assalamu%20Alaikum%2C%0A%0AI%20visited%20the%20Al-Ilm%20Academy%20website%20and%20would%20like%20to%20know%20more%20about%20your%20courses%2C%20admission%20process%2C%20and%20other%20details.%0A%0APlease%20share%20the%20relevant%20information.%0A%0AThank%20you."
+   target="_blank"
+   rel="noopener noreferrer">
+   Contact Us on WhatsApp
 </a>
 <a class="email-btn"
-   href="mailto:official.alilmacademy@gmail.com">
-   <span>✉</span> Email Us
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=official.alilmacademy@gmail.com&su=Al-Ilm%20Academy%20Inquiry&body=Assalamu%20Alaikum%2C%0A%0AI%20visited%20the%20Al-Ilm%20Academy%20website%20and%20would%20like%20to%20know%20more%20about%20your%20courses%2C%20admission%20process%2C%20and%20other%20details.%0A%0APlease%20share%20the%20relevant%20information.%0A%0AThank%20you."
+   target="_blank"
+   rel="noopener noreferrer">
+   <span>✉</span> Contact Us via Email
 </a>
 </section>
 
@@ -226,6 +385,12 @@
     <p>Quality Education with Islamic Values</p>
 
     <p>© 2026 Al-Ilm Academy. All Rights Reserved.</p>
+
+    <p class="website-disclaimer">
+    Note: Images displayed on this website are for illustrative
+    purposes only. Actual classroom settings, facilities and
+    learning environments may differ from the images shown.
+</p>
 
 </footer>
 
@@ -244,6 +409,7 @@ admissionForm.addEventListener("submit", function(event) {
     const phone = formData.get("phone");
     const course = formData.get("course");
     const studentClass = formData.get("class");
+    const studentAge = formData.get("student-age");
     const message = formData.get("message");
 
     const referenceNumber = "AILM-" + Date.now();
@@ -254,6 +420,7 @@ admissionForm.addEventListener("submit", function(event) {
         "Student Name: " + studentName + "\n" +
         "Parent / Guardian: " + parentName + "\n" +
         "Contact Number: " + phone + "\n" +
+        "Student Age: " + studentAge + " years\n" +
         "Interested Course: " + course + "\n" +
         "Student's Class: " + (studentClass || "Not specified") + "\n" +
         "Message: " + (message || "No message");
@@ -298,5 +465,244 @@ admissionForm.addEventListener("submit", function(event) {
     );
 
     submissionResult.hidden = false;
+});
+
+// MOBILE NAVIGATION MENU
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+
+    const isOpen = navLinks.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.innerHTML = isOpen ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+    link.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = "☰";
+
+        const targetId = link.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+
+    });
+});
+
+// AUTOMATIC ACTIVE NAVIGATION
+
+const sections = document.querySelectorAll(
+    "#home, #courses, #programs, #about, #admission, #exam-registration, #contact"
+);
+
+const navItems = document.querySelectorAll(".nav-links a");
+
+const sectionObserver = new IntersectionObserver(
+    function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                navItems.forEach(function (link) {
+                    link.classList.remove("active-link");
+                });
+
+                const activeLink = document.querySelector(
+                    '.nav-links a[href="#' + entry.target.id + '"]'
+                );
+
+                if (activeLink) {
+                    activeLink.classList.add("active-link");
+                }
+            }
+        });
+    },
+    {
+        rootMargin: "-25% 0px -65% 0px"
+    }
+);
+
+sections.forEach(function (section) {
+    sectionObserver.observe(section);
+});
+
+// SCROLL REVEAL ANIMATION
+
+const revealItems = document.querySelectorAll(
+    ".courses, .course-card, .our-programs, .program-card, .about, .admission, .exam-registration, .contact"
+);
+
+const revealObserver = new IntersectionObserver(
+    function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+revealItems.forEach(function (item) {
+    item.classList.add("reveal");
+    revealObserver.observe(item);
+});
+
+/* AUTO HIDE NAVBAR */
+
+const navbar = document.querySelector(".main-nav");
+let navbarTimer;
+
+window.addEventListener("scroll", function () {
+    navbar.classList.remove("nav-hidden");
+
+    clearTimeout(navbarTimer);
+
+    navbarTimer = setTimeout(function () {
+        if (!navLinks.classList.contains("active")) {
+            navbar.classList.add("nav-hidden");
+        }
+    }, 900);
+});
+
+/* OUR PROGRAMS MOBILE CAROUSEL */
+
+const programsContainer = document.querySelector(".programs-container");
+const programCards = document.querySelectorAll(".program-card");
+
+if (programsContainer && programCards.length) {
+
+    function updateActiveProgram() {
+
+        if (window.innerWidth > 600) {
+            programCards.forEach(function (card) {
+                card.classList.remove("is-active");
+            });
+            return;
+        }
+
+        const containerCenter =
+            programsContainer.getBoundingClientRect().left +
+            programsContainer.getBoundingClientRect().width / 2;
+
+        let closestCard = null;
+        let smallestDistance = Infinity;
+
+        programCards.forEach(function (card) {
+
+            const cardRect = card.getBoundingClientRect();
+            const cardCenter = cardRect.left + cardRect.width / 2;
+            const distance = Math.abs(containerCenter - cardCenter);
+
+            if (distance < smallestDistance) {
+                smallestDistance = distance;
+                closestCard = card;
+            }
+        });
+
+        programCards.forEach(function (card) {
+            card.classList.toggle("is-active", card === closestCard);
+        });
+    }
+
+    programsContainer.addEventListener(
+        "scroll",
+        updateActiveProgram,
+        { passive: true }
+    );
+
+    window.addEventListener("resize", updateActiveProgram);
+
+    updateActiveProgram();
+}
+/* PROGRAM LEARN MORE: CENTER CONTACT SECTION */
+
+document.querySelectorAll(".program-btn").forEach(function (button) {
+
+    button.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        const contactSection = document.getElementById("contact");
+
+        if (contactSection) {
+            contactSection.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+
+    });
+
+});
+/* CONDITIONAL STUDENT CLASS FIELD */
+
+const courseSelect = document.getElementById("course");
+const classFieldGroup = document.getElementById("classFieldGroup");
+const classSelect = document.getElementById("class");
+
+function updateClassField() {
+
+    const selectedCourse = courseSelect.value;
+
+    const needsClass =
+        selectedCourse === "School Coaching" ||
+        selectedCourse === "Both Courses";
+
+    classFieldGroup.hidden = !needsClass;
+    classSelect.required = needsClass;
+
+    if (!needsClass) {
+        classSelect.value = "";
+    }
+}
+
+courseSelect.addEventListener("change", updateClassField);
+
+updateClassField();
+// NAVBAR: CONSISTENT HEADING SCROLL POSITION
+
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(function (link) {
+
+    link.addEventListener("click", function (event) {
+
+        const targetId = this.getAttribute("href");
+        const target = document.querySelector(targetId);
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        const heading = target.querySelector("h1, h2") || target;
+
+        const scrollPosition =
+            heading.getBoundingClientRect().top +
+            window.scrollY -
+            window.innerHeight * 0.42;
+
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth"
+        });
+
+        history.replaceState(null, "", targetId);
+
+    });
+
 });
 </script>
